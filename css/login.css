@@ -1,0 +1,80 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    height: 100%;
+    margin-top: 110px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; /* Centrar contenido en pantallas anchas */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+.login-container {
+    background-color: #ecf0f1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%; /* Cambiado a un ancho relativo */
+    max-width: 400px; /* Ancho máximo para evitar estiramiento excesivo */
+    margin: 150px,50px,50px 50px; /* Espaciado alrededor del contenedor */
+}
+.login-form {
+    padding: 20px;
+}
+.login-form h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(18, 17, 16, 0.82);
+    margin-top: 0; /* Añadido margen superior para separar el encabezado */
+}
+.input-container {
+    margin-bottom: 20px;
+}
+.input-container label {
+    display: block;
+    color: #555;
+    margin-bottom: 5px;
+}
+.input-container input {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* Cambiado el color del borde */
+    border-radius: 5px;
+    background-color: #ecf0f1; /* Cambiado el color de fondo del campo de entrada */
+}
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #2b3146; /* Cambiado el color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.login-form button:hover {
+    background: #2b3146; /* Cambiado el color de fondo al pasar el ratón */
+}
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #2b3146;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.signup-link a {
+    color: #2b3146;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        margin-top: 200px;
+        margin: 20px; /* Reducir el margen en pantallas pequeñas */
+    }
+}

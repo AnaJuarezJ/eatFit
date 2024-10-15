@@ -1,0 +1,96 @@
+body {
+  font-family: "Raleway", sans-serif;;
+    background-color: #ffffff; /* Fondo negro */
+    color: #090909; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+.header {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;;
+    display: flex;
+    width: 100%;
+    height: 725px;
+    background-size: cover; /* Ajusta el tamaño de la imagen al div */
+    background-position: center; /* Centra la imagen en el div */
+}
+.header div p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+/* Animación para la aparición del h1 de abajo hacia arriba y mantenerlo visible */
+.slide-up {
+    position: relative; /* Posicionamiento relativo para establecer una posición inicial */
+    animation: slideFromBottom 1s ease-in-out forwards; /* Nombre de la animación, duración y retención del estado final */
+    opacity: 0; /* Inicialmente oculto */
+  }
+  
+  /* Definición de la animación */
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0; /* Inicio de la animación: opacidad 0 */
+      top: 100%; /* Inicio de la animación: posición inicial abajo de la pantalla */
+    }
+    100% {
+      opacity: 1; /* Final de la animación: opacidad 1 */
+      top: 0; /* Final de la animación: posición original (en pantalla) */
+    }
+  }
+
+.header h1{
+    color: #e7e41725;
+    margin: 0px;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 30vh;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    background-image: url("assets/sano.jpg");
+    background-size: 100% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  
+    background-position: calc(25% + (-50% * var(--percentage))) 0;
+  
+    transform: translateX(calc(50% + (-100% * var(--percentage))));
+}
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 23vw; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 22vw; 
+  }
+}
+
+.header a:hover{
+    transition-property: font-size;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);;
+    font-size: 20px;
+}
+img{
+    padding: 0;
+    align-items: left;    
+    width: 100%;
+    height: 100%;
+}
+
+.big-icon {
+    font-size: 1.7em; /* Tamaño del ícono */
+    color: #000000; /* Color del ícono */
+  }
+  .big-iconW {
+    font-size: 1em; /* Tamaño del ícono */
+    color: #ffffff; /* Color del ícono */
+  }

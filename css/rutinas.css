@@ -1,0 +1,120 @@
+/* Importar fuentes */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
+
+/* Estilos generales */
+body {
+  font-family: 'Roboto Condensed', 'Archivo Narrow', 'Raleway', Arial, sans-serif; /* Fuentes con fallback */
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Ajuste del alto mínimo del cuerpo */
+}
+
+/* Contenido principal */
+.contenido {
+  margin-top: 20px;
+  padding: 20px;
+  width: 80%;
+  max-width: 95%; /* Ancho máximo del contenido */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Agregar scroll vertical si es necesario */
+  height: 85vh; /* Establecer altura máxima */
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center; /* Centrar el texto */
+}
+/* Estilos para la línea personalizada */
+.custom-line {
+  border: none; /* Elimina la línea por defecto */
+  height: 1px; /* Altura de la línea */
+  margin: 20px 0; /* Espacio alrededor de la línea */
+  background: linear-gradient(to right, transparent, #347a34, transparent); /* Degradado */
+}
+
+/* Estilos de la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos de los campos de entrada y botones */
+input[type="text"],
+input[type="submit"] {
+  padding: 10px; /* Ajuste de tamaño del padding */
+  margin-bottom: 10px;
+  width: calc(100% - 70%); /* Ajusta el ancho para adaptarse al contenedor */
+  box-sizing: border-box; /* Considera el relleno y el borde en el ancho total */
+  border: 1px solid #ccc; /* Borde ligero */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+
+input[type="submit"] {
+  background-color: #333;
+  width: calc(100% - 90%); /* Ajusta el ancho para adaptarse al contenedor */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Estilos específicos para el video */
+#video-preview {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el formulario */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 480px) {
+  .contenido {
+    width: 95%; /* Reducir el ancho del contenido en pantallas pequeñas */
+    margin-top: 60px;
+  }
+}
+.edit-profile-btn {
+  padding: 8px 8px;
+  font-size: 16px;
+  background-color: #68732e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  top: 10px;
+  right: 10px;
+}
+
+.edit-profile-btn:hover {
+  background-color: #AEAEAC;
+}

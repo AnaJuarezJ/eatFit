@@ -1,0 +1,133 @@
+/* Estilos del menú */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;;
+    align-items: center;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to right, #575e67, rgba(99, 122, 78, 0.522));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 5px;
+  }
+  
+  .menu .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  .menu .logo:hover {
+    opacity: 0.8;
+  }
+  
+  .menu ul {    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu ul li {
+    margin: 20px;
+    justify-content: right;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: #ffd700;
+  }
+
+  /* Estilos del menú desplegable en pantallas pequeñas */
+.toggle-btn {
+    display: none;
+  }
+  
+  .toggle-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 768px) {
+    .menu {align-items: flex-start; /* Alinea elementos a la izquierda */
+      padding: 14px;
+    }
+      .menu .logo {
+        margin-left: 0; /* Elimina el margen izquierdo para que se alinee a la izquierda */
+        order: -1; /* Cambia el orden para mantener el logo a la izquierda */
+      }
+    
+      .menu ul {
+        display: none;
+        margin-left: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        left: calc(100% - 40%); /* Mover el menú a la derecha */
+        background: linear-gradient(to right, #4d4f5269, rgba(85, 92, 79, 0.785));
+        width: 40%;
+        text-align: center;
+      }
+    
+    .menu ul li {
+      margin: 10px 0;
+    }
+  
+    .toggle-btn:checked ~ ul {
+      display: flex;
+    }
+  
+    .toggle-icon {
+      display: block;
+      position: absolute;
+      right: 40px; /* Ajusta la posición a la derecha con un margen de 40px */
+      cursor: pointer;
+      font-size: 24px;
+    }
+    .menu ul li a[href="../home.php"]::after {
+      content: "Cerrar sesión"; 
+    }
+    .menu ul li a[href="./soporte.php"]::after {
+      content: " Soporte"; 
+    }.menu ul li a[href="../logica/logout.php"]::after {
+      content: " Cerrar sesión"; 
+    }
+    .menu ul li a[href="./editar_perfil.php"]::after {
+      content: " Editar Perfil"; 
+    }
+  } 
+  /* Estilos del contenido */
+  .content {
+    padding-top: 70px;
+  }
+  
+  section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
